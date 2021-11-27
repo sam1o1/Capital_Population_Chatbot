@@ -1,0 +1,29 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - country_capital_population
+
+
+entities:
+  - country_name          
+  - capital_name
+  - population_value
+
+responses:
+  # This utter will be sent to greet the user 
+  utter_greet:
+  - text: "Hello! I am your chatBot *_* I can find the capital or/and population of a country"
+  
+  utter_goodbye:
+  - text: "See you soon"         # the bot will randomly choose one of these msgs
+  - text: "Have a good day!"
+
+actions:
+- find_capital_population
+ 
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

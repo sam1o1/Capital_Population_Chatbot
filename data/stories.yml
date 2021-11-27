@@ -1,0 +1,9 @@
+version: "3.0"
+stories:
+- story: starting the conversation 
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+
+
