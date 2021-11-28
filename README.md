@@ -32,7 +32,7 @@ Here is a gif of the chatbot working.
 
 This project uses the following software and Python libraries: Please stick to the below versions to avoid any failure. 
 
- -   [`Python Version : 3.8.8`](https://www.python.org/downloads/release/python-364/)
+ - [`Python Version : 3.8.8`](https://www.python.org/downloads/release/python-364/)
  - [`Rasa Version : 3.0.0`](https://rasa.com/docs/rasa/installation/)
  - [`Rasa SDK Version : 3.0.0`](https://pypi.org/project/rasa-sdk/)
  - [`requests`](https://pypi.org/project/requests/)
@@ -49,16 +49,20 @@ try to import rasa_sdk if you faced any trouble:
 <a name="files"></a>
 ## File Descriptions
 There are some **Terminologies** related to Rasa environment such as intents, entities, domian, etc.. To fully understand that please refer to [Rasa learning center](https://learning.rasa.com/)
-[Capital_Population_Chatbot](https://github.com/sam1o1/Capital_Population_Chatbot)/**data**/
+
+Capital_Population_Chatbot/**data**/
+
  - `nlu.yml`: it contains the intents and training examples
  - `rules.yml`: There some intents and utterances that often occur
    together such as when the user says good bye the bot too says good
    bye. This file includes these rules.
  - `stories.yml`: The Stories and paths that may occur.
 
-[Capital_Population_Chatbot](https://github.com/sam1o1/Capital_Population_Chatbot)/**actions**/
+Capital_Population_Chatbot/**actions**/
+
 `actions.py`: This file is a python script that makes the api calls and returns prompts. 
 `domain.yml`: it puts it all together the intents, entities, responses, and actions. 
+
 check out [Rasa Documentation](https://rasa.com/docs/rasa/) for more details and further information. 
 
  ## Get Started
